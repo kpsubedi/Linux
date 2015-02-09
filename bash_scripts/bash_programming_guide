@@ -26,3 +26,21 @@ or
 $chmod +x <your_script>.sh
 $./<your_script>.sh
 
+
+[Shell types]
+There are different types of shells out there.
+For example,
+To check available shells in your OS
+$cat /etc/shells
+
+Try different shells
+
+$dash
+$sh
+
+After entering above two commands you logged into two different shells.
+To logout press CTRL+D twice because you shelled to twice.
+
+
+
+
