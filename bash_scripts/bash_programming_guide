@@ -11,4 +11,18 @@ compiled binaries.
 Bash script contains available linux commands, loops,
 control statements, conditions etc.
 
+[Example 1]
+
+Create a script using your favorite editor such as vim, pico, emacs, etc.
+
+Try to give .sh extension to your scripts. This is not required but be 
+easy to read.
+
+[Execute]
+
+To execute your script
+$bash <your_script>.sh
+or 
+$chmod +x <your_script>.sh
+$./<your_script>.sh
 
