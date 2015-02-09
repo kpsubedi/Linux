@@ -41,6 +41,31 @@ $sh
 After entering above two commands you logged into two different shells.
 To logout press CTRL+D twice because you shelled to twice.
 
+Check your shell
 
+$whoami
+
+This command shows your usename logged into the system.
+I am goint to store output of this command to variable.
+
+$user_name=`whoami` 
+
+Note: ` ` : This is quote you will get from tilde key.
+Donot put space between your variable and linux command.
+
+Accessing the variable:
+
+$echo $user_name
+
+$cat /etc/passwd | grep $user_name
+
+Your will see single line from /etc/passwd file matches with your user name.
+
+/etc/passwd is separated by color ":". 
+The last field is your shell name.
+
+
+
+$cat /etc/passwd | grep 
 
 
