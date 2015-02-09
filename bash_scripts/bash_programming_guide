@@ -1,0 +1,14 @@
+[Introduction]
+
+The shell is a command interpreter. We can say alternatively layer between 
+user and kernel. It also very powerful language, called shell scripting.
+It provides an easy-to-use tool for building applications by "gluing together"
+system calls,,
+tools,
+utilities, and 
+compiled binaries.
+
+Bash script contains available linux commands, loops,
+control statements, conditions etc.
+
+
