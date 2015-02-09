@@ -66,6 +66,5 @@ The last field is your shell name.
 
 
 
-$cat /etc/passwd | grep 
 
 
