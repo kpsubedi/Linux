@@ -77,3 +77,29 @@ Variables
 nam=string
 For variable assignment, "=" must not have adjacent spaces.
 
+
+
+[Maths]
+echo $((3+4))
+
+
+[Brace Expansion]
+Arbitrary Word Generation
+
+String generation:
+prefix{ab,cd,ef}suffix
+
+Sequence generation:
+prefix{x..y}suffix
+
+Sequencing by specified increment:
+prefix{x..y..incr}suffix
+
+Brace expansion may be nested and combined.
+
+The prefix and suffix are optional.
+
+[Functions]
+
+
+
