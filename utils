@@ -1,0 +1,8 @@
+
+socat 
+
+Server Mode
+$socat tcp4-l:$port, reuseaddr, fork exec:'tr A-Z a-z'
+
+Client
+$socat FOO | socat - tcp4-connect:$host:$port
