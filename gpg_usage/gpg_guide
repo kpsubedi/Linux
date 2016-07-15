@@ -1,0 +1,26 @@
+[Generating a Keypar]
+
+$gpg --help
+
+$gpg --gen-key
+
+
+[List Keys]
+
+$gpg --list-keys
+
+[Exporting Public Key]
+$gpg --armor --export your_email@domain.com > your_key.asc
+
+[Exporting to KeyServer]
+$gpg --keyserver <server> --send-key your_email@domain.com
+
+[Importing a Public Key]
+The other end of key exchange is importing other people's 
+public keys to your keyring.
+$gpg --import key.asc
+
+Check for successful import 
+$gpg --list-keys
+
+
