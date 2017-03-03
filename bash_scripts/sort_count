@@ -1,0 +1,1 @@
+cat 1-maktub-1-74ADD6536CDCFB8B77D10A1E7BE6B9EF.exe.txt | grep -Ev ^[a-zA-Z] | cut -d":" -f2  | sed -e "s/[[:space:]]\+/ /" | cut -d " " -f9 | sort | uniq -c | sort -nr
