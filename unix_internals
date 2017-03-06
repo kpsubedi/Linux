@@ -1,2 +1,12 @@
 Chapter 6 : Memory Management Principles
 =========
+Memory management support provided by the i386 processor is 
+described to show how the kernel and user processes utilise the
+underlying physical hardware. 
+
+How the i386 processor is used to satisfy the memory requirements that application
+programs place on the kernel?
+
+By first describing the format of an ELF file, it is possible to understand how the kernel loader
+creates the memory image of the process from the file contents.
+
