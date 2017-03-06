@@ -10,3 +10,21 @@ programs place on the kernel?
 By first describing the format of an ELF file, it is possible to understand how the kernel loader
 creates the memory image of the process from the file contents.
 
+
+The Executable and Linking Format (ELF):
+----------------------------------------
+There are many terms used to describe an executable file ranging from 'program' to 'executable program' to 
+'object file'.
+The published ELF documentation clearly classifies the different types of object files as follows:
+
+1. A relocatable file holds code and data that can be linked with other object files to produce an executable 
+file or a shared object file.
+2. A shared object file also holds code and data but is used in two different contexts. 
+Firstly, it can be linked with other relocatable object files and shared object files to produce another 
+object file. Secondly, it can be used by the system when a program is run to link its contents dynamically 
+with an executable file to create the running process image. 
+3. An executable file contains a complete description of how the system can create a process image. It includes
+text and data, the specification of which shared object files are needed and appropriate symbolic and debugging 
+information needed by the system's debuggers.
+
+The ELF file format has two views, the program linking view and the execution view. 
