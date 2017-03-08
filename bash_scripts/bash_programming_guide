@@ -102,4 +102,8 @@ The prefix and suffix are optional.
 [Functions]
 
 
+Example: Find file size greater than 200k.
+
+find . -size +200k -exec ls -lh {} \;
+
 
