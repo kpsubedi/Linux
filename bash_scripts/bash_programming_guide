@@ -107,3 +107,9 @@ Example: Find file size greater than 200k.
 find . -size +200k -exec ls -lh {} \;
 
 
+[Hex Editor]
+$ hexdump  -C  -s  0x700  -n 8 <file>
+
+-s: skip 0x700 bytes
+-n: number of bytes
+
