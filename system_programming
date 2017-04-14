@@ -1,0 +1,4 @@
+
+/* Simple copy program using low-level I/O */
+
+#include <stdlib.h>
