@@ -62,3 +62,76 @@ SIGCHLD:
 Number: 17
 Default Action: Ignore
 Description: Child process has terminated
+
+Default Action
+--------------
+If there is no corresponding signal handler:
+-- Term: Default action is Terminate the process
+-- Core: Default action is Terminate the process as well write a core (which is the memory image of the process at the time)
+-- Ignore: Ignore by default
+
+Where Do Signals Come From?
+----------------------------
+Memory Management
+=================
+- SIGSEGV
+Kernel
+======
+- SIGPIPE, SIGALRM
+Another user process
+====================
+- SIGUSR1
+init
+===
+- SIGTERM
+
+Child Process
+=============
+- SIGCHLD
+
+Command Line (kill command)
+===========================
+- ANY ....
+Terminal Driver
+===============
+- SIGINT, SIGQUIT
+The CPU
+=======
+- SIGILL, SIGBUS
+
+
+Sending Signals
+===============
+- using kill system call
+e.g., kill(1239, 15);
+1239: Target process ID
+15: Signal number (or symbolic constant suhc as SIGTERM) Use 0 to test for process existance
+
+kill() will retures:
+- 0 on success
+- -1 on error
+
+If we send signal 0 , it will test whether target process is actually exist
+- Your real or effective UID must match the UID of the target process
+
+Use raise (signum) to send yourself a signal
+
+
+[Process Termination]
+- The default action of most signal types is to terminate the process
+-- For some signals a memory image (core file) is also written 
+Upper Byte    Lower Byte
+--------------------------------
+|           |  |                |
+|    0      |  |Signal Number   | 
+---------------------------------
+             /\
+              |
+              |
+              |
+              |
+        "Core Dumped" flag
+        
+        
+
+
