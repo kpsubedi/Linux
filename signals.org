@@ -1,0 +1,4 @@
+[Signals]
+
+$kill -l
+: List all the signals type
