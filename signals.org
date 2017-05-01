@@ -2,3 +2,63 @@
 
 $kill -l
 : List all the signals type
+
+Higher number signals are so called POSIX real-time signals
+
+[[Signal Types]]
+
+SIGHUP 
+------
+Number: 1
+Default Action: Term
+Description: Some daemons interpret this to mean "re-read your configuration file"
+
+When user hung up the connection modem sends a SIGHUP signal
+
+SIGINT
+------
+Number: 2
+Default Action: Term
+Description: The signal sent by ^C (Control C) on the terminal
+
+SIGTRAP
+------
+Number: 5
+Default Action: Core
+Description: Trace/breakpoint trap
+
+SIGFPE (FPE: Floating Point Exception)
+------
+Number: 8
+Default Action: Core
+Description: Arithmetic error, e.g. divide by zero
+
+SIGKILL
+------
+Number: 9
+Default Action: Term
+Description: Lethal signal, cannot be caught or ignored.
+
+SIGSEGV (SEGV: Segmentation violation)
+------
+Number: 11
+Default Action: Core
+Description: Invalid memory reference 
+
+SIGALRM:
+------
+Number: 14
+Default Action: Term
+Description: Expiry of alarm clock timer
+
+SIGTERM: 
+------
+Number: 15
+Default Action: Term
+Description: Polite "please terminate" signal
+
+SIGCHLD:
+------
+Number: 17
+Default Action: Ignore
+Description: Child process has terminated
