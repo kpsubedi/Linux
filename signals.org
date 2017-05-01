@@ -133,5 +133,14 @@ Upper Byte    Lower Byte
         "Core Dumped" flag
         
         
+MACRO
+=====
+WIFSIGNALED (status)
+- True if child terminated by signal
+WTERMSIG(status)
+- The signal number
+WCOREDUMP(status)
+- True if child produced core dump
+
 
 
