@@ -2,3 +2,9 @@
 /* Simple copy program using low-level I/O */
 
 #include <stdlib.h>
+
+
+
+
+mount command has <b>noatimemount</b> option that will prevent the file system from doing updates on the 
+atime timestamp.
