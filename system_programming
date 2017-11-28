@@ -19,3 +19,8 @@ st_mode:
 -------------------------------------------------------------
 
 chmod: short for change mode, and it changes the mode field of the inode.
+
+Linux the "Sticky Bit" is ignored on ordinary files.
+
+Set GID and Set UID bits: heart of the privilege escalation mechanism in Linux.
+g
