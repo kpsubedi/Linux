@@ -9,4 +9,13 @@
 mount command has <b>noatimemount</b> option that will prevent the file system from doing updates on the 
 atime timestamp every time a file is simply being read.
 
+[File Type and Permissions]
 
+st_mode:
+-------
+-------------------------------------------------------------
+|  |  |  |  | s | g | t | r | w | x | r | w | x | r | w  | x |
+|  |  |  |  | s | g | t | r | w | x | r | w | x | r | w  | x | 
+-------------------------------------------------------------
+
+chmod: short for change mode, and it changes the mode field of the inode.
