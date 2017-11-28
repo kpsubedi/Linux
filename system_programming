@@ -7,4 +7,6 @@
 
 
 mount command has <b>noatimemount</b> option that will prevent the file system from doing updates on the 
-atime timestamp.
+atime timestamp every time a file is simply being read.
+
+
