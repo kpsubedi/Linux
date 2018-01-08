@@ -1,0 +1,4 @@
+
+To get id of the current user
+=============================
+id | sed -e s/uid=//g -e s/\(.*//g
