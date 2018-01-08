@@ -2,3 +2,14 @@
 To get id of the current user
 =============================
 id | sed -e s/uid=//g -e s/\(.*//g
+
+Example
+=======
+#!/bin/bash
+
+if [ `id | sed -e s/uid=//g -e s/\(.*//g` -eq 0 ] && [ $2 != "stop" ]; then
+    echo "Root is not allowed to execute"
+    exit 1
+fi
+
+echo "You are not root"
