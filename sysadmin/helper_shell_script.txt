@@ -13,3 +13,8 @@ if [ `id | sed -e s/uid=//g -e s/\(.*//g` -eq 0 ] && [ $2 != "stop" ]; then
 fi
 
 echo "You are not root"
+
+sed to do mass replace
+======================
+cd /path/to/your/folder
+sed -i 's/foo/bar/g' *
