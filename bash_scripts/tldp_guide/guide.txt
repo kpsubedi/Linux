@@ -29,3 +29,8 @@ Shell scripts are interpreted, not compiled. The shell reads commands from the s
 
 Apart from passing commands to the kernel, the main task of a shell is providing a user environment, which can be configured individually using shell resource configuration files. 
 
+Shell Types
+===========
+Just like people know different languages and dialects, your UNIX system will usually offer a variety of shell types:
+
+- sh or Bourne Shell: the original 
