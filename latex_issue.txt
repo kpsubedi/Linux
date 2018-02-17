@@ -1,0 +1,22 @@
+Resume Compile
+
+Step 1
+-------
+uncomment in file.tex
+\bibliographystyle{alpha}
+\bibliography{kul_ref.bib}
+
+Step 2
+------
+$ pdflatex file.tex && bibtex file.aux && pdflatex file.tex && pdflatex file.tex
+
+Step 3
+-----
+comment in file.tex
+\bibliographystyle{alpha}
+\bibliography{kul_ref.bib}
+
+Step 4
+------
+$ pdflatex file.tex
+
