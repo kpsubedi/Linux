@@ -2,3 +2,6 @@
 
 # docker run -d --name WebServer -p 8080:8080 my_webserver
 
+# docker stop WebServer
+
+# docker start WebServer
