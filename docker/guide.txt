@@ -5,3 +5,6 @@
 # docker stop WebServer
 
 # docker start WebServer
+
+
+$ docker run -d -p 80:80 --name webserver nginx
