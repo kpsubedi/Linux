@@ -8,3 +8,13 @@
 
 
 $ docker run -d -p 80:80 --name webserver nginx
+
+
+Docker CLI for macOS using Homebrew
+-----------------------------------
+brew install https://brew.sh/
+
+$ brew install docker-cloud 
+
+testis-MacBook-Pro:~ test.test$ docker-cloud -v
+docker-cloud 1.0.9
