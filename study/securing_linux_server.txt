@@ -85,6 +85,15 @@ Remove --unrestricted : Take out to force grub to request username and password.
 # grub2-mkconfig -o /boot/grub2/grub.cfg
 # reboot
 
+Secure Shell
+------------
+telnet : not secure
+rsh/rcp : not secure
+
+ssh
+Universally used for secure remote command-line access cryptographic handshake authenticates the server and securely 
+exchanges encryption key.
+
 
 Assessing the Vulnerability of Linux Server
 ------------------------------------------
