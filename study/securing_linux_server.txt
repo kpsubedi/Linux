@@ -41,4 +41,51 @@ Boot from Installation Media in Rescue mode
 ==>
 Linux running with In-memory filesystem 
 
+Forced Single-User Boot
+-----------------------
+Asking GRUB to pass additional parameter we can tell not to run init or systemd. 
+
+Press 'e' in bootloader menu. 
+Go to line /vmlinuz
+1. Change ro => rw
+2. Add init=/sysroot/bin/sh 
+
+Ctrl + x
+
+# chroot /sysroot
+# passwd root
+# touch /.autorelabel
+
+Restart the machine.
+
+Setting a GRUB Password
+-----------------------
+Grub2 configuration file
+# cd /etc/grub.d/
+# ls
+01_users
+
+# vi 01_users
+
+Add the following:
+cat << EOF
+set superuser="admin"
+password admin admins-pass
+EOF
+
+# vi 10_linux
+
+/CLASS
+CLASS="--class ...--unrestricted"
+
+Remove --unrestricted : Take out to force grub to request username and password.
+
+# cd /boot/grub2
+# cp grub.cfg grub.cfg.backup
+# grub2-mkconfig -o /boot/grub2/grub.cfg
+# reboot
+
+
+Assessing the Vulnerability of Linux Server
+------------------------------------------
 
