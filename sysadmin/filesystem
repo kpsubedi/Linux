@@ -12,7 +12,7 @@ Step 1:View the I-node usage using following commands:
   2.1 Limit: The bad news: on the ext* filesystems, we cannot simply increase the inode limit on the existing volume.
   There are two options:
   2.1.1 If the disk is an LVM, increase the size of the volume.
-  2.1.2. Backup and create a new filesystem, specifying a higher i-node limit. Using $sudo mae2fs -N 
+  2.1.2. Backup and create a new filesystem, specifying a higher i-node limit. Using $sudo make2fs -N 
   
   
 Btffs, XFS do not have this limitation. And ZFS doesn't use I-node.  
