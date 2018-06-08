@@ -4,4 +4,23 @@ Interprocess Communication Overview
 
 This chapter presents a brief overview of the facilities that processes and threads can use to 
 communicate with one another and to synchronize their actions. The following chapters provide 
-more details about thesse 
+more details about these facilities.
+
+
+43.1 A Taxonomy of IPC Facilities
+
+Figure 43-1 summarizes the rich variety of UNIX communication and synchronization facilities, dividing 
+them into three broad functional categories:
+
+- Communication: These facilities are concerned with exchanging data between processes.
+- Synchronization: These facilities are concerned with synchronizing the actions of processes or 
+threads.
+- Signals: Although signals are intended primarily for other purposes, they can be used as a 
+synchronization technique in certain circumstances. More rarely, signals can be used as a 
+communication technique: the signal number itself is a form of information, and realtime signals 
+can be accompanied by associated data (an integer or a pointer). Signals are described in detail in 
+Chapters 20 to 22. 
+
+Although some of these facilities are concerned with synchronization, the general term interprocess 
+communication (IPC) is often used to describe them all.
+
