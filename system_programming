@@ -28,3 +28,14 @@ Linux the "Sticky Bit" is ignored on ordinary files.
 
 Set GID and Set UID bits: heart of the privilege escalation mechanism in Linux.
 g
+
+====
+$cat
+
+open another terminal
+$ps -aux | grep cat
+
+note pid of cat
+
+$cat /proc/<pid>/maps
+
