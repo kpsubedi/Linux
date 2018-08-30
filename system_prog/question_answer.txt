@@ -1,0 +1,12 @@
+
+1. Find a zombie process
+$ps aux | grep 'Z'
+
+demo+  8600  0.0  0.0      0     0 pts/1    Z+   09:07   0:00 [ssh] <defunct>
+demo+ 10261  0.0  0.0  11752   908 pts/3    S+   09:34   0:00 grep --color=auto Z
+
+$pstree -p -s 8600
+
+init(1)───sshd(1018)───sshd(308)───sshd(393)───bash(394)───sudo(6915)───su(6916)───bash(6917)───sftp(8599)───ssh(8600)
+
+
