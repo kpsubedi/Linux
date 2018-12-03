@@ -24,3 +24,14 @@ Check for successful import
 $gpg --list-keys
 
 
+The following steps show how to export and import a set of GPG keys
+
+Import only one set of key, first have to get the listing of keys and find the one want to export:
+
+1. $ gpg --list-keys
+
+
+Select import key from above list
+$ gpg --output mykeygpg_pub.gpg --armor --export XYZABC01
+$ gpg --output mykeygpg_sec.gpg --armor --export-secret-key XYZABC01
+
