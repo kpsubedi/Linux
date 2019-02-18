@@ -1,0 +1,6 @@
+Rsync
+
+rsync -arzh -e ssh <<source>> <<destination>>
+
+e.g., rsync -arzh -e ssh testmachine.demo.com:~/Downloads /home/test/download_backup
+
