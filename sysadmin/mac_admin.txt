@@ -1,0 +1,13 @@
+1. Make bootable USB using iso 
+$ diskutil list
+
+
+unmount 
+$ diskutil unmountDisk /dev/disk2
+
+$ hdiutil convert -format UDRW -o centosfull ./CentOS-7-*.iso 
+
+$ sudo dd if=./centosfull.dmg of=/dev/disk2 bs=1m 
+
+Note: make sure /dev/disk2 unmount
+
