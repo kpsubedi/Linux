@@ -1,0 +1,13 @@
+Book: Practical Unix Programming: A Guide to Concurrency Communication, and Multithreading 
+By Kay A. Robbins, Steven Robbins
+
+
+
+Chapter 3:
+
+
+Exercise 3.3 
+Suppose that an inode is 128 bytes, pointers are 4 bytes long, and the status information takes up 
+68 bytes. Assume a block size of 8K. How much room is there for pointers in the inode? 
+How big a file can be represented with direct pointers? Indirect? Double indirect? Triple indirect?
+
