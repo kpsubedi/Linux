@@ -18,3 +18,7 @@ sed to do mass replace
 ======================
 cd /path/to/your/folder
 sed -i 's/foo/bar/g' *
+
+PS
+===
+ps -Ao  user,uid,comm,pid,pcpu,pmem --sort=-pid
