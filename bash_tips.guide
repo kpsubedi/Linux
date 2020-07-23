@@ -11,3 +11,20 @@ E.g., $mkdir -- --demo
 This will create a directory with name "--demo". Also to remove $rmdir -- --demo
 
 
+2. Bash Globbing
+Bash does not support native regular expressions like some other standard programming languages. The Bash Shell feature that is used for matching or 
+expanding specific types of patterns is called GLOBBING. 
+
+$man 3 glob
+$man 7 glob 
+
+NAME
+glob, globfree - find pathnames matching a pattern, free memory from glob()
+
+SYNOPSIS
+#include <glob.h>
+
+int glob(const char *pattern, int flags, int (*errfunc) (const char *epath, int eerrno), glob_t *pglob);
+void globfree(glob_t *pglob);
+
+
