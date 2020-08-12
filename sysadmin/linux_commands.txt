@@ -1,0 +1,3 @@
+wget
+----
+wget --no-clobber --convert-links --random-wait -r -p -E -e robots=off -U mozilla http://index-of.es/Magazines/hakin9
