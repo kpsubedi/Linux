@@ -1,0 +1,3 @@
+[Merge Multiple PDFs in Linux]
+
+gs -dNOPAUSE -sDEVICE=pdfwrite -sOutputFile=PBNCombine.pdf -dBATCH BN_1.PDF BN_PROVISIONAL.PDF Manmohan_Character.PDF GB_BN_TRANSCRIPT.pdf
