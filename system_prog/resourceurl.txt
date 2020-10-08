@@ -2,3 +2,9 @@ http://nickdesaulniers.github.io/
 
 [SystemTap]
 https://sourceware.org/systemtap/documentation.html
+
+[OOM]
+https://www.oracle.com/technical-resources/articles/it-infrastructure/dev-oom-killer.html
+
+
+
