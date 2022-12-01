@@ -1,0 +1,30 @@
+Been going down the eBPF rabbithole over the last few days. A Few initial observations as a 🧵
+
+What is it? (I'll explain best I can)
+
+We run programs in userspace. We call kernel w/ syscalls. eBPF allows you to run sandboxed programs in the Kernel that can be used for many use-cases like
+- syscall filtering
+- network filtering
+- tracing
+
+Putting it simply. The possibilities for security are HUGE! Think of it as you adding probes to kernel operations and your code running as callbacks
+- someone runs a risky command - detect it
+- accesses denylisted host - block it
+- accesses denylist L7 API endpoint - block it
+
+I have looked at 4 projects that use eBPF. All of them provide varying levels of abstraction. Let's start with the lowest level with bcc
+bcc is a python library that makes it easy for you to write and use eBPF code. You write the callback functions in C, but you still use python functions to be able to add these probes and hook it to specific kernel events. Its low-level(ish), but it gets easier as you go along.
+https://lnkd.in/eQFTHVc5
+
+The next one is tracee from @AquaSecTeam. This project can be used to trace and detect events. The cool thing about tracee is that you can compose rules in @golang and rego, which I found 👍
+They have an easy deployment experience to Kubernetes as well
+https://lnkd.in/epvihvXP
+
+The other one that I (am yet to try) is Tetragon from @isovalent. This seems a lot more comprehensive. And rule composition syntax seems easy enough. But they have ~ no docs. This is a big issue for me. Hope they have some soon
+https://lnkd.in/ef4_r_Yd
+
+The one that is most easy to use is @sysdig falco.
+- The rules dont need you to know anything about eBPF
+- The docs are dope
+We in-fact do a deep-dive into falco in an @AppSecEngineer course on container monitoring
+https://lnkd.in/ea8gz5PX
