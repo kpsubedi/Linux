@@ -1,0 +1,15 @@
+Bash scripts help to automate routinely done manual taskes. 
+
+#!/bin/bash 
+
+# function to replace spaces in the provided input text with underscores 
+
+replacespaces () {
+    echo $@ | sed 's/ /_/g' 
+ }
+ 
+ # Call above function 
+ 
+ replacespaces "Welcome to Cloud Security   2023!!"
+ 
+ 
